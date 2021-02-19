@@ -27,17 +27,17 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-98368c4c4e840771e666.js"
+    "url": "webpack-runtime-fae362b9300aedad93e3.js"
   },
   {
-    "url": "framework-eb684e3e828ad13b3940.js"
+    "url": "framework-acd7498685eeb36e39da.js"
   },
   {
-    "url": "app-2572ba642ba5f807f455.js"
+    "url": "app-82d415cbdccaae41fa93.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "928bff14b61a738e6bcf1b7b538cbca7"
+    "revision": "94d73e47a37c1b0380756697c628f63f"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-241020a1cf7d0f317bbe.js"
@@ -48,10 +48,10 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "0bc9443ddd753ed0b149b15384305cd0"
+    "revision": "ae3a18a8f930ac1d396a6cfe835960e0"
   },
   {
-    "url": "polyfill-dc3d4b3368c39956ad77.js"
+    "url": "polyfill-38eeccf847c561c8692c.js"
   },
   {
     "url": "manifest.webmanifest",
@@ -147,7 +147,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/sologames/app-2572ba642ba5f807f455.js`))) {
+  if (!resources || !(await caches.match(`/sologames/app-82d415cbdccaae41fa93.js`))) {
     return await fetch(event.request)
   }
 
