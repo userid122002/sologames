@@ -33,11 +33,11 @@ self.__precacheManifest = [
     "url": "framework-acd7498685eeb36e39da.js"
   },
   {
-    "url": "app-33f8e67d8674e83c0ede.js"
+    "url": "app-c72deae00353bfa9cca2.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "f1dee9cbdabe5ea10f40f2b19ece16b8"
+    "revision": "9dcecba366ffbe0c7a6f65bd224a5656"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-241020a1cf7d0f317bbe.js"
@@ -48,7 +48,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "d9123d78967b0bc9c59658db30579a82"
+    "revision": "44ce43b87ea0b0088ab0f7a80d122b04"
   },
   {
     "url": "polyfill-38eeccf847c561c8692c.js"
@@ -147,7 +147,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/sologames/app-33f8e67d8674e83c0ede.js`))) {
+  if (!resources || !(await caches.match(`/sologames/app-c72deae00353bfa9cca2.js`))) {
     return await fetch(event.request)
   }
 
