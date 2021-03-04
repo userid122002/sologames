@@ -27,20 +27,20 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-25fbe5f4e3508c0c17b5.js"
+    "url": "webpack-runtime-3f81b62a9e0209f8bc7b.js"
   },
   {
-    "url": "framework-acd7498685eeb36e39da.js"
+    "url": "framework-eb684e3e828ad13b3940.js"
   },
   {
-    "url": "app-c72deae00353bfa9cca2.js"
+    "url": "app-987c3250fc40b2eb6032.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "9dcecba366ffbe0c7a6f65bd224a5656"
+    "revision": "8ecfce1654cb5c8fce1fea77e65ad5fd"
   },
   {
-    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-241020a1cf7d0f317bbe.js"
+    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-fd4fb51a6fac1c18bdde.js"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
@@ -48,10 +48,10 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "44ce43b87ea0b0088ab0f7a80d122b04"
+    "revision": "2d4962d57b2eace6b4c4e20d73f08f12"
   },
   {
-    "url": "polyfill-38eeccf847c561c8692c.js"
+    "url": "polyfill-dc3d4b3368c39956ad77.js"
   },
   {
     "url": "manifest.webmanifest",
@@ -147,7 +147,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/sologames/app-c72deae00353bfa9cca2.js`))) {
+  if (!resources || !(await caches.match(`/sologames/app-987c3250fc40b2eb6032.js`))) {
     return await fetch(event.request)
   }
 
